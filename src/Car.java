@@ -121,4 +121,12 @@ public abstract class Car implements Movable {
     public int getDirection() {
         return direction;
     }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
 }

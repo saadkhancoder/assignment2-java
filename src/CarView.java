@@ -93,11 +93,38 @@ public class CarView extends JFrame {
         stopButton.setPreferredSize(new Dimension(X/5-15,200));
         this.add(stopButton);
 
-        // This actionListener is for the gas button only
-        // TODO: Create more for each component as necessary
+        // This actionListener is for the gas button
         gasButton.addActionListener(e -> {
             carC.gas(gasAmount);
         });
+        // This actionListener is for the brake button
+        brakeButton.addActionListener(e -> {
+            carC.brake(gasAmount);
+        });
+        // This actionListener is for the Start Engine button
+        startButton.addActionListener(e -> {
+            carC.startEngine();
+        });
+        // This actionListener is for the Stop Engine button
+        stopButton.addActionListener(e -> {
+            carC.stopEngine();
+        });
+        // This actionListener is for the turn left button
+        leftButton.addActionListener(e -> {
+            carC.turnLeft();
+        });
+        // This actionListener is for the Stop Engine button
+        rightButton.addActionListener(e -> {
+            carC.turnRight();
+        });
+        // This actionListener is for the Stop Engine button
+        turboOnButton.addActionListener(e -> {
+            carC.turboOn();
+        });// This actionListener is for the Stop Engine button
+        turboOffButton.addActionListener(e -> {
+            carC.turboOff();
+        });
+
 
         // Make the panel layout more compact
         this.pack();
